@@ -25,6 +25,5 @@ namespace App_Banco
             InitializeComponent();
         }
 
-       
     }
 }

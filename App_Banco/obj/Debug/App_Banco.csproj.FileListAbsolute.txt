@@ -1,0 +1,41 @@
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\bin\Debug\App_Banco.exe.config
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\bin\Debug\App_Banco.exe
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\bin\Debug\App_Banco.pdb
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\App_Banco.csprojResolveAssemblyReference.cache
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\MainWindow.baml
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\MainWindow.g.cs
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\App.g.cs
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\App_Banco_MarkupCompile.cache
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\App_Banco.g.resources
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\App_Banco.Properties.Resources.resources
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\App_Banco.csproj.GenerateResource.Cache
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\App_Banco.exe
+C:\Users\Software\AppData\Local\Temporary Projects\App_Banco\obj\Debug\App_Banco.pdb
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\bin\Debug\App_Banco.exe.config
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\bin\Debug\App_Banco.exe
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\bin\Debug\App_Banco.pdb
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\App_Banco.csprojResolveAssemblyReference.cache
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\Clave.baml
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\Usuario.baml
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\Clave.g.cs
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\Usuario.g.cs
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\App.g.cs
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\App_Banco_MarkupCompile.cache
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\App_Banco.g.resources
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\App_Banco.Properties.Resources.resources
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\App_Banco.csproj.GenerateResource.Cache
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\App_Banco.exe
+C:\Users\Software\Documents\Visual Studio 2012\Projects\App_Banco\App_Banco\obj\Debug\App_Banco.pdb
+C:\Users\sebas\Desktop\App_Banco\App_Banco\bin\Debug\App_Banco.exe.config
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.exe
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.pdb
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.csprojResolveAssemblyReference.cache
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\Clientes.baml
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\Usuario.baml
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\Clientes.g.cs
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\Usuario.g.cs
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App.g.cs
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco_MarkupCompile.cache
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.g.resources
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.Properties.Resources.resources
+C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.csproj.GenerateResource.Cache

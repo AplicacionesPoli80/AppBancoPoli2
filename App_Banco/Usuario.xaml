@@ -8,20 +8,20 @@
             <ColumnDefinition Width="174*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-<!--TITULO-->
+        <!--TITULO-->
         <TextBlock x:Name="txt_title" Margin="190,32,0,0" TextWrapping="Wrap" Text="Banco App Clientes" Foreground="#FFAE2525" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Left" Height="33" Width="167">
             <TextBlock.Effect>
                 <DropShadowEffect/>
             </TextBlock.Effect>
         </TextBlock>
         <!--TEXT BOX USUARIO-->
-        <TextBox x:Name="txt_usuario" Margin="190,113,0,0" TextWrapping="WrapWithOverflow" ClipToBounds="True" SnapsToDevicePixels="True" FontFamily="Verdana" IsUndoEnabled="False" FontWeight="Thin" Background="{x:Null}" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FF832C2C" Width="167" Height="18">
+        <TextBox x:Name="txtUsuario" Margin="190,113,0,0" TextWrapping="WrapWithOverflow" ClipToBounds="True" SnapsToDevicePixels="True" FontFamily="Verdana" IsUndoEnabled="False" FontWeight="Thin" Background="{x:Null}" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FF832C2C" Width="167" Height="18">
             <TextBox.DataContext>
                 <RuntimeBinder:CSharpBinderFlags>None</RuntimeBinder:CSharpBinderFlags>
             </TextBox.DataContext>
         </TextBox>
         <!--BOTON USUARIO-->
-        <Button x:Name="btn_continuar_user" Content="Continuar" Margin="227,155,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="78" Height="21.96">
+        <Button x:Name="btn_continuar_user" Content="Continuar" Margin="222,252,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="78" Height="22">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -33,6 +33,11 @@
                 <DropShadowEffect/>
             </TextBlock.Effect>
         </TextBlock>
+        <TextBlock x:Name="txt_usuario1_Copy" HorizontalAlignment="Left" Margin="89,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" FontFamily="Rockwell" Height="18" FontSize="13.333">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Text="CONTRASEÑA"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtContraseña" HorizontalAlignment="Left" Height="18" Margin="196,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161" TextChanged="textBox_TextChanged"/>
 
     </Grid>
 </Window>
