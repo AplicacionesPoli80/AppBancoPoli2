@@ -39,3 +39,7 @@ C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco_MarkupCompile.cac
 C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.g.resources
 C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.Properties.Resources.resources
 C:\Users\sebas\Desktop\App_Banco\App_Banco\obj\Debug\App_Banco.csproj.GenerateResource.Cache
+C:\Users\sebas\Desktop\App_Banco\App_Banco\bin\Debug\App_Banco.exe
+C:\Users\sebas\Desktop\App_Banco\App_Banco\bin\Debug\App_Banco.pdb
+C:\Users\sebas\Desktop\App_Banco\App_Banco\bin\Debug\EntityFramework.dll
+C:\Users\sebas\Desktop\App_Banco\App_Banco\bin\Debug\EntityFramework.xml
