@@ -4,17 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a51045d1771445a4ab9c433b82a9cf72" Name="Diagram1">
+      <Diagram DiagramId="a5e389c7b3da4b8e86d15f28588b2c03" Name="Diagram1">
         <EntityTypeShape EntityType="AppBancoDBModel.CLIENTES" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
         <EntityTypeShape EntityType="AppBancoDBModel.CUENTAS" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="AppBancoDBModel.MOVIMIENTOS" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="AppBancoDBModel.PARAMETROS" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AppBancoDBModel.TIPO_MOV" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
         <EntityTypeShape EntityType="AppBancoDBModel.USUARIOS" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
-        <AssociationConnector Association="AppBancoDBModel.FK__CUENTAS__CLI_ID__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="AppBancoDBModel.FK__CUENTAS__CLI_ID__164452B1" ManuallyRouted="false" />
         <AssociationConnector Association="AppBancoDBModel.FK__USUARIOS__CLI_ID__117F9D94" ManuallyRouted="false" />
-        <AssociationConnector Association="AppBancoDBModel.FK__MOVIMIENT__CUE_N__1BFD2C07" ManuallyRouted="false" />
-        <AssociationConnector Association="AppBancoDBModel.FK__MOVIMIENT__TIP_I__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="AppBancoDBModel.FK__MOVIMIENT__CUE_N__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="AppBancoDBModel.FK__MOVIMIENT__TIP_I__1BFD2C07" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

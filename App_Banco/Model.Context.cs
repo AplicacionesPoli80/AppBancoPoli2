@@ -13,10 +13,10 @@ namespace App_Banco
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AppBancoDBEntities1 : DbContext
+    public partial class AppBancoDBEntities : DbContext
     {
-        public AppBancoDBEntities1()
-            : base("name=AppBancoDBEntities1")
+        public AppBancoDBEntities()
+            : base("name=AppBancoDBEntities")
         {
         }
     

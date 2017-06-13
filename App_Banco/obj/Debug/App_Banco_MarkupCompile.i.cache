@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\jlrodriguez\Source\Repos\AppBancoPoli2\App_Banco\obj\Debug\
+C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\obj\Debug\
 App_Banco
 none
 false
 DEBUG;TRACE
-C:\Users\jlrodriguez\Source\Repos\AppBancoPoli2\App_Banco\App.xaml
-2-676708915
+C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\App.xaml
+6100555687
 2-1881755278
-19-1828018605
-17-581689424
-Clientes.xaml;Usuario.xaml;
+2181273957
+191881073282
+Clientes.xaml;Cuenta.xaml;Movimientos.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;Usuario.xaml;
 
 False
 
