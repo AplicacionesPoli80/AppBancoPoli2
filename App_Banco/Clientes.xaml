@@ -9,10 +9,10 @@
                 <DropShadowEffect/>
             </TextBlock.Effect>
         </TextBlock>
-        <Button x:Name="btn_Cargar_Clientes" Content="Buscar" HorizontalAlignment="Left" Margin="370,66,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Cargar_Clientes" Content="Buscar" HorizontalAlignment="Left" Margin="372,52,0,0" VerticalAlignment="Top" Width="75" Click="btn_Cargar_Clientes_Click"/>
         <TextBlock x:Name="txt_Info_Cargue" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" Text="En este módulo podrá cargar la información de sus clientes, este documento debe ser un txt separado por &quot;;&quot;" VerticalAlignment="Top" Width="497" FontSize="10"/>
-        <Label x:Name="lbl_Buscar" Content="Archivo:" HorizontalAlignment="Left" Margin="51,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.522,-0.392"/>
-        <TextBox x:Name="txt_Ruta_Archivo" HorizontalAlignment="Left" Height="22" Margin="109,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
+        <Label x:Name="lbl_Buscar" Content="Archivo:" HorizontalAlignment="Left" Margin="51,48,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.522,-0.392"/>
+        <TextBox x:Name="txt_Ruta_Archivo" HorizontalAlignment="Left" Height="22" Margin="109,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
         <Label x:Name="lbl_info_Cargue" Content="Información del Cargue:" HorizontalAlignment="Left" Height="29" Margin="24,111,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.462,0.448"/>
         <Label x:Name="lbl_Lineas_Validas" Content="Validos:" HorizontalAlignment="Left" Height="29" Margin="24,188,0,0" VerticalAlignment="Top" Width="143"/>
         <Label x:Name="lbl_Lineas_Erróneas" Content="Erróneos:" HorizontalAlignment="Left" Height="29" Margin="24,232,0,0" VerticalAlignment="Top" Width="143"/>
@@ -21,6 +21,7 @@
         <Label x:Name="lbl_Lineas_Validas_Copy" Content="Número Registros:" HorizontalAlignment="Left" Height="29" Margin="24,145,0,0" VerticalAlignment="Top" Width="143"/>
         <Label x:Name="lbl_Cant_Regist_Validos" Content="" HorizontalAlignment="Left" Height="29" Margin="190,188,0,0" VerticalAlignment="Top" Width="109"/>
         <Label x:Name="lbl_Cant_Regist_Erróneos" Content="" HorizontalAlignment="Left" Height="29" Margin="190,232,0,0" VerticalAlignment="Top" Width="109"/>
+        <Button x:Name="btnCargar" Content="Cargar" HorizontalAlignment="Left" Height="26" Margin="190,79,0,0" VerticalAlignment="Top" Width="120" Click="btnCargar_Click"/>
 
 
     </Grid>

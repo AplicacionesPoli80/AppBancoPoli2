@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AppBancoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CLIENTES">
+    <Key>
+      <PropertyRef Name="CLI_ID" />
+    </Key>
+    <Property Name="CLI_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CLI_TIPO_ID" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_NOMBRES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_APELLIDOS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_FEC_NAC" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CLI_SEXO" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_CORREO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_TELEFONO" Type="Decimal" Precision="12" Scale="0" Nullable="false" />
+    <NavigationProperty Name="CUENTAS" Relationship="Self.FK__CUENTAS__CLI_ID__173876EA" FromRole="CLIENTES" ToRole="CUENTAS" />
+    <NavigationProperty Name="USUARIOS" Relationship="Self.FK__USUARIOS__CLI_ID__117F9D94" FromRole="CLIENTES" ToRole="USUARIOS" />
+  </EntityType>
+  <EntityType Name="CUENTAS">
+    <Key>
+      <PropertyRef Name="CUE_NUMERO" />
+    </Key>
+    <Property Name="CUE_NUMERO" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="CUE_FECHA_APE" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CUE_TIPO" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CUE_SALDO_DISP" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="CUE_SALDO_TOT" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="CUE_SOBRECUPO" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="CUE_ESTADO" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="CLIENTES" Relationship="Self.FK__CUENTAS__CLI_ID__173876EA" FromRole="CUENTAS" ToRole="CLIENTES" />
+    <NavigationProperty Name="MOVIMIENTOS" Relationship="Self.FK__MOVIMIENT__CUE_N__1BFD2C07" FromRole="CUENTAS" ToRole="MOVIMIENTOS" />
+  </EntityType>
+  <EntityType Name="MOVIMIENTOS">
+    <Key>
+      <PropertyRef Name="MOV_ID" />
+    </Key>
+    <Property Name="MOV_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MOV_FECHA" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MOV_HORA" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="MOV_VALOR" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="MOV_DESC" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="CUE_NUMERO" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="TIP_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CUENTAS" Relationship="Self.FK__MOVIMIENT__CUE_N__1BFD2C07" FromRole="MOVIMIENTOS" ToRole="CUENTAS" />
+    <NavigationProperty Name="TIPO_MOV" Relationship="Self.FK__MOVIMIENT__TIP_I__1CF15040" FromRole="MOVIMIENTOS" ToRole="TIPO_MOV" />
+  </EntityType>
+  <EntityType Name="PARAMETROS">
+    <Key>
+      <PropertyRef Name="PAR_ID" />
+    </Key>
+    <Property Name="PAR_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PAR_NOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAR_VALOR" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_MOV">
+    <Key>
+      <PropertyRef Name="TIP_ID" />
+    </Key>
+    <Property Name="TIP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TIPO_NOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TIP_DESC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TIP_NAT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MOVIMIENTOS" Relationship="Self.FK__MOVIMIENT__TIP_I__1CF15040" FromRole="TIPO_MOV" ToRole="MOVIMIENTOS" />
+  </EntityType>
+  <EntityType Name="USUARIOS">
+    <Key>
+      <PropertyRef Name="USU_LOGIN" />
+      <PropertyRef Name="USU_PWD" />
+      <PropertyRef Name="USU_TIPO" />
+      <PropertyRef Name="CLI_ID" />
+    </Key>
+    <Property Name="USU_LOGIN" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USU_PWD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USU_TIPO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLI_ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="CLIENTES" Relationship="Self.FK__USUARIOS__CLI_ID__117F9D94" FromRole="USUARIOS" ToRole="CLIENTES" />
+  </EntityType>
+  <Association Name="FK__CUENTAS__CLI_ID__173876EA">
+    <End Role="CLIENTES" Type="Self.CLIENTES" Multiplicity="1" />
+    <End Role="CUENTAS" Type="Self.CUENTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTES">
+        <PropertyRef Name="CLI_ID" />
+      </Principal>
+      <Dependent Role="CUENTAS">
+        <PropertyRef Name="CLI_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__USUARIOS__CLI_ID__117F9D94">
+    <End Role="CLIENTES" Type="Self.CLIENTES" Multiplicity="1" />
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTES">
+        <PropertyRef Name="CLI_ID" />
+      </Principal>
+      <Dependent Role="USUARIOS">
+        <PropertyRef Name="CLI_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MOVIMIENT__CUE_N__1BFD2C07">
+    <End Role="CUENTAS" Type="Self.CUENTAS" Multiplicity="1" />
+    <End Role="MOVIMIENTOS" Type="Self.MOVIMIENTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUENTAS">
+        <PropertyRef Name="CUE_NUMERO" />
+      </Principal>
+      <Dependent Role="MOVIMIENTOS">
+        <PropertyRef Name="CUE_NUMERO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MOVIMIENT__TIP_I__1CF15040">
+    <End Role="TIPO_MOV" Type="Self.TIPO_MOV" Multiplicity="1" />
+    <End Role="MOVIMIENTOS" Type="Self.MOVIMIENTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO_MOV">
+        <PropertyRef Name="TIP_ID" />
+      </Principal>
+      <Dependent Role="MOVIMIENTOS">
+        <PropertyRef Name="TIP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AppBancoDBEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CLIENTES" EntityType="Self.CLIENTES" />
+    <EntitySet Name="CUENTAS" EntityType="Self.CUENTAS" />
+    <EntitySet Name="MOVIMIENTOS" EntityType="Self.MOVIMIENTOS" />
+    <EntitySet Name="PARAMETROS" EntityType="Self.PARAMETROS" />
+    <EntitySet Name="TIPO_MOV" EntityType="Self.TIPO_MOV" />
+    <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" />
+    <AssociationSet Name="FK__CUENTAS__CLI_ID__173876EA" Association="Self.FK__CUENTAS__CLI_ID__173876EA">
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+      <End Role="CUENTAS" EntitySet="CUENTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__USUARIOS__CLI_ID__117F9D94" Association="Self.FK__USUARIOS__CLI_ID__117F9D94">
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MOVIMIENT__CUE_N__1BFD2C07" Association="Self.FK__MOVIMIENT__CUE_N__1BFD2C07">
+      <End Role="CUENTAS" EntitySet="CUENTAS" />
+      <End Role="MOVIMIENTOS" EntitySet="MOVIMIENTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MOVIMIENT__TIP_I__1CF15040" Association="Self.FK__MOVIMIENT__TIP_I__1CF15040">
+      <End Role="TIPO_MOV" EntitySet="TIPO_MOV" />
+      <End Role="MOVIMIENTOS" EntitySet="MOVIMIENTOS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
