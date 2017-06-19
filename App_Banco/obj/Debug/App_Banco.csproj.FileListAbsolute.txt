@@ -91,4 +91,5 @@ C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\bin\Debug\System.Windows.Intera
 C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\bin\Debug\MahApps.Metro.pdb
 C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\bin\Debug\MahApps.Metro.xml
 C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\obj\Debug\App_Banco_MarkupCompile.lref
-C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\obj\Debug\MenuBanco.g.cs
+C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\obj\Debug\MenuBancoPoli.g.cs
+C:\Users\sebas\Documents\AppBancoPoli2\App_Banco\obj\Debug\MenuBancoPoli.baml

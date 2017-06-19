@@ -77,8 +77,8 @@
     <Compile Include="CUENTAS.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="MenuBanco.xaml.cs">
-      <DependentUpon>MenuBanco.xaml</DependentUpon>
+    <Compile Include="MenuBancoPoli.xaml.cs">
+      <DependentUpon>MenuBancoPoli.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model.cs">
       <AutoGen>True</AutoGen>
@@ -108,7 +108,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MenuBanco.xaml">
+    <Page Include="MenuBancoPoli.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

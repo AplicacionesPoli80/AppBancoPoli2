@@ -1,30 +1,29 @@
-﻿<Controls:MetroWindow
+﻿<Controls:MetroWindow x:Class="App_Banco.MenuBancoPoli"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App_Banco"
-        mc:Ignorable="d"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
         Title="Menu" Height="368.523" Width="511.484">
     <Grid>
         <Image x:Name="image1" HorizontalAlignment="Left" Height="60.772" VerticalAlignment="Top" Width="139.76" Source="Gráfico1.png"/>
         <Rectangle Height="60.772" Margin="139.76,0,0,0" VerticalAlignment="Top" StrokeThickness="0" Fill="#FF184387"/>
-        <Controls:Tile HorizontalAlignment="Left" Margin="63,87,0,23" Height="Auto" Width="141" Background="#FF184387" Title="Clientes">
+        <Controls:Tile HorizontalAlignment="Left" Margin="63,87,0,23" Height="Auto" Width="141" Background="#FF184387" Title="Clientes" Click="Tile_Click">
             <Image x:Name="image" Height="130.084" Width="100" Source="Imagenes/Accounts-Book.png"/>
         </Controls:Tile>
-        <Controls:Tile Height="Auto" Margin="225,87,178,146" Width="Auto" Background="#FF184387" Title="Cuentas" HorizontalTitleAlignment="Center">
+        <Controls:Tile Height="Auto" Margin="225,87,178,146" Width="Auto" Background="#FF184387" Title="Cuentas" HorizontalTitleAlignment="Center" Click="Tile_Click_1">
             <Image x:Name="image2" Height="58" Width="70" Source="Imagenes/Cuenta2.png"/>
         </Controls:Tile>
-        <Controls:Tile Height="105" Margin="225,0,178,23" Width="Auto" Background="#FF184387" VerticalAlignment="Bottom" Title="Movimientos" FontSize="70" HorizontalTitleAlignment="Center" TitleFontSize="14">
+        <Controls:Tile Height="105" Margin="225,0,178,23" Width="Auto" Background="#FF184387" VerticalAlignment="Bottom" Title="Movimientos" FontSize="70" HorizontalTitleAlignment="Center" TitleFontSize="14" Click="Tile_Click_3">
             <Image x:Name="image2_Copy2" Height="48.956" Width="70.06" Source="Imagenes/Movimientos.png"/>
         </Controls:Tile>
-        <Controls:Tile Height="Auto" Margin="0,87,56,146" Width="100" Background="#FF184387" HorizontalAlignment="Right" Title="Usuarios" HorizontalTitleAlignment="Center">
+        <Controls:Tile Height="Auto" Margin="0,87,56,146" Width="100" Background="#FF184387" HorizontalAlignment="Right" Title="Usuarios" HorizontalTitleAlignment="Center" Click="Tile_Click_2">
             <Image x:Name="image2_Copy1" Height="52.299" Width="70.06" Source="Imagenes/User-Login_Menu.png" VerticalAlignment="Bottom"/>
         </Controls:Tile>
-        <Controls:Tile Height="105" Margin="0,0,55,23" Width="101" Background="#FF184387" HorizontalAlignment="Right" VerticalAlignment="Bottom" Title="Cerrar Cesíon" TitleFontSize="12" HorizontalTitleAlignment="Center">
+        <Controls:Tile Height="105" Margin="0,0,55,23" Width="101" Background="#FF184387" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Title="Cerrar Cesíon" TitleFontSize="12" HorizontalTitleAlignment="Center">
             <Image x:Name="image2_Copy3" Height="48.121" Width="70.06" Source="Imagenes/Logout.png" VerticalAlignment="Top"/>
         </Controls:Tile>
-        <Image x:Name="image2_Copy" Height="69.848" Width="70.06" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Grid>
 </Controls:MetroWindow>
