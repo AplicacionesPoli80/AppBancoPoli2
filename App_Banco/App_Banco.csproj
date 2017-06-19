@@ -77,6 +77,9 @@
     <Compile Include="CUENTAS.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="MenuBanco.xaml.cs">
+      <DependentUpon>MenuBanco.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -104,6 +107,10 @@
     <Page Include="Cuenta.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MenuBanco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Movimientos.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -174,6 +181,18 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="Imagenes\Accounts-Book.png" />
+    <Resource Include="Imagenes\Atras.png" />
+    <Resource Include="Imagenes\Clientes.png" />
+    <Resource Include="Imagenes\Cuenta.png" />
+    <Resource Include="Imagenes\Cuenta2.png" />
+    <Resource Include="Imagenes\Gráfico1.png" />
+    <Resource Include="Imagenes\Login-02.png" />
+    <Resource Include="Imagenes\Logout.png" />
+    <Resource Include="Imagenes\Lupa.png" />
+    <Resource Include="Imagenes\Movimientos.png" />
+    <Resource Include="Imagenes\User-Login.png" />
+    <Resource Include="Imagenes\User-Login_Menu.png" />
     <Resource Include="Resources\Entypo.ttf" />
   </ItemGroup>
   <ItemGroup>
@@ -183,9 +202,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Imagenes\User-Login.png" />
-    <Resource Include="Imagenes\Login-02.png" />
-    <Resource Include="Imagenes\Gráfico1.png" />
+    <Resource Include="Gráfico1.png" />
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>

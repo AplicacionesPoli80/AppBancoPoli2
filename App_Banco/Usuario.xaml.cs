@@ -47,15 +47,15 @@ namespace App_Banco
                 //Registro Login Cliente
                 if (usu.USU_PWD.Equals(pwd) && usu.USU_TIPO.Equals(tipo1))
                 {
-                    Clientes C = new Clientes();
-                    C.Show();
+                    MenuBanco M = new MenuBanco();
+                    M.Show();
                     this.Close();
                 }
                 //Regstro Login Usuarios
                 if (usu.USU_PWD.Equals(pwd) && usu.USU_TIPO.Equals(tipo2))
                 {
-                    Clientes C = new Clientes();
-                    C.Show();
+                    MenuBanco M = new MenuBanco();
+                    M.Show();
                     this.Close();
                 }
             }

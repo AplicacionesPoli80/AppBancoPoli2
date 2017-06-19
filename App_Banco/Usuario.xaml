@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:RuntimeBinder="clr-namespace:Microsoft.CSharp.RuntimeBinder;assembly=Microsoft.CSharp" x:Class="App_Banco.MainWindow"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        Title="MainWindow" Height="350" Width="318.466">
+        Title="MainWindow" Height="350" Width="311.466">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="174*"/>
@@ -17,15 +17,15 @@
             </TextBox.DataContext>
         </TextBox>
         <!--BOTON USUARIO-->
-        <Button x:Name="btn_continuar_user" Content="Ingresar" Margin="121,259,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="78" Height="28" Click="btn_continuar_user_Click" Background="#FF184387" Foreground="White">
+        <Button x:Name="btn_continuar_user" Content="Ingresar" Margin="113,253,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="78" Height="28" Click="btn_continuar_user_Click" Background="#FF184387" Foreground="White">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
         <PasswordBox x:Name="passwordBox" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Ingrese Contraseña" HorizontalAlignment="Left" Height="28" Margin="93,181,0,0" VerticalAlignment="Top" Width="174"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="89" Margin="44,19,0,0" VerticalAlignment="Top" Width="223" Stretch="Fill" Source="Imagenes/Gráfico1.png"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="29" Margin="55,133,0,0" VerticalAlignment="Top" Width="33" Stretch="Fill" Source="Imagenes/User-Login.png"/>
-        <Image x:Name="image1_Copy" HorizontalAlignment="Left" Height="29" Margin="55,181,0,0" VerticalAlignment="Top" Width="33" Source="Imagenes/Login-02.png"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="89" Margin="44,26,0,0" VerticalAlignment="Top" Width="223" Stretch="Fill" Source="Imagenes/Gráfico1.png"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="29" Margin="44,133,0,0" VerticalAlignment="Top" Width="33" Stretch="Fill" Source="Imagenes/User-Login.png"/>
+        <Image x:Name="image1_Copy" HorizontalAlignment="Left" Height="29" Margin="44,181,0,0" VerticalAlignment="Top" Width="33" Source="Imagenes/Login-02.png"/>
         <Label x:Name="labelError" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,214,0,0" Width="212" Foreground="#FFD81515"/>
 
 
